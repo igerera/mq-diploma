@@ -1,80 +1,141 @@
 doctype
 html
 	head
+		title Дипломная работа по адаптивной и мобильной вёрстке
 		meta(charset="UTF-8")
 		meta(name="viewport", content="width=device-width, initial-scale=1.0")
 		meta(http-equiv="X-UA-Compatible", content="ie=edge")
-		title Дипломная работа по адаптивной и мобильной вёрстке
-		link(rel="stylesheet", href="style.css")
+		link(rel="stylesheet", href="css/styles.css")
 	body
 		header.header
-			.logo
-			h1.header-title
-			button.apple
-			button.google
-		main
+			.header__logo
+			h1.header__title
+				span.title__title be recruited 
+				span.title__subtitle play college sports
+			.store__buttons
+				button.store
+					a.button-content__wrapper(href="https://www.apple.com/ru/ios/app-store/")
+						.button__apple-store
+						.button-text__wrapper
+							p download on the 
+							p.appstore appstore
+				button.store
+					a.button-content__wrapper(href="https://play.google.com/store")
+						.button__google-play
+						.button-text__wrapper
+							p get it on 
+							p.google-play google play
+		main.main
 			section.athlets
-				h2.section-header
-					| Athlets
-				pucture.section-pic
-				.features
-					.counter 01
-					h3.feat-title
-						| connection
-					p.feat-description
-						| Connect with coaches directly, you can ping coaches to view profile..feature-1
-					.counter 02
-					h3.feat-title
-						| collaboration
-					p.feat-description
-						| Work with other student athletes to  increase visability. When you share and like other players videos it will increase your visability as a player. This is the team work aspect to Surface 1.
-					.counter 03
-					h3.feat-title
-						| growth
-					p.feat-description
-						| Resources and tools for you to get better as a student Athelte. Access to training classes, tutor sessions, etc 
+				h2.athlets__title
+					| Athlets			
+				.athlets__features
+					.athlets__pic
+					.features__wrapper
+						.feature-1
+							h3.feat-title
+								span 01
+								| connection
+							p.feat-description
+								| Connect with coaches directly, you can ping coaches to view profile.
+						.feature-2
+							h3.feat-title
+								span 02
+								| collaboration
+							p.feat-description
+								| Work with other student athletes to increase visability. When you share and like other players videos it will increase your visability as a player. This is the team work aspect to Surface 1.
+						.feature-3
+							h3.feat-title
+								span 03
+								| growth
+							p.feat-description
+								| Resources and tools for you to get better as a student Athlete. Access to training classes, tutor sessions, etc 
 			section.players
-				h2.section-title
+				h2.players__title
 					| Players
-				pucture.section-pic
-				.features
-					.counter 01
-					h3.feat-title
-						| connection
-					p.feat-description
-						| Connect with talented athlete directly, you can watch their skills through video showreels directly from Surface 1.
-					.counter 02
-					h3.feat-title
-						| collaboration
-					p.feat-description
-						| Work with recruiter to increase your chances of finding talented athlete.
-					.counter 03
-					h3.feat-title
-						| growth
-					p.feat-description
-						| Save your time, recruit proper athlets for your team.
+				.players__features
+					.players__pic
+					.features__wrapper
+						.feature-1
+							h3.feat-title
+								span 01
+								| connection
+							p.feat-description
+								| Work with other student athletes to increase visability. When you share and like other players videos it will increase your visability as a player. This is the team work aspect to Surface 1.
+						.feature-2
+							h3.feat-title
+								span 02
+								| collaboration
+							p.feat-description
+								| Work with recruiter to increase your chances of findingtalented athlete.
+						.feature-3
+							h3.feat-title
+								span 03
+								| growth
+							p.feat-description
+								| Save your time, recruit proper athlets for your team.
 			section.advantages
-				picture.adv-1
-					.counter 01
-					h3.adv-title
-						| be active
-					p.adv-descriotion
-						| Post videos with your skills, Like and follow others to be more popular.
-				picture.adv-2
-					.counter 02
-					h3.adv-title
-						| find contact
-					p.adv-descriotion
-						| Contact others to find right coach or athlete you are looking for. 
-				picture.adv-3
-					.counter 03
-					h3.adv-title
-						| work it
-					p.adv-descriotion
-						| Enjoy being a student athlete, the recruiting process can be overwhelming, we want to make this enjoyable experience.
+				.advantage-1
+					.advantage__pic
+						picture.pic-1
+							source(media='(max-width: 640px)', srcset='images/img/be-active_640.jpg')
+							source(media='(min-width: 641px) and (max-width: 960px)', srcset='images/img/be-active_960.jpg')
+							source(media='(min-width: 961px) and (max-width: 1920px)', srcset='images/img/be-active_960.jpg')
+							img(src='images/img/be-active.jpg', width="100%" alt='Man with cellphone')
+						.advantages__counter 
+							span 01
+					.advantage-text__wrapper
+						h3.advantage__title
+							| be active
+						p.advantage__description
+							| Post videos with your skills, Like and follow others to be more popular.
+				.advantage-2
+					.advantage__pic
+						picture.pic-2
+							source(media='(max-width: 640px)', srcset='images/img/find-contact_640.jpg')
+							source(media='(min-width: 641px) and (max-width: 960px)', srcset='images/img/find-contact_960.jpg')
+							source(media='(min-width: 961px) and (max-width: 1920px)', srcset='images/img/find-contact_1024.jpg')
+							img(src='images/img/find-contact.jpg.jpg', width="100%" alt='Old wise trainer')
+						.advantages__counter 
+							span 02
+					.advantage-text__wrapper
+						h3.advantage__title
+							| find contact
+						p.advantage__description
+							| Contact others to find right coach or athlete you are looking for.
+				.advantage-3
+					.advantage__pic
+						picture.pic-3
+							source(media='(max-width: 640px)', srcset='images/img/work-it_640.jpg')
+							source(media='(min-width: 641px) and (max-width: 960px)', srcset='images/img/work-it_960.jpg')
+							source(media='(min-width: 961px) and (max-width: 1920px)', srcset='images/img/work-it_1024.jpg')
+							img(src='images/img/find-contact.jpg.jpg', width="100%" alt='The team')
+						.advantages__counter 
+							span 03
+					.advantage-text__wrapper
+						h3.advantage__title
+							| work it
+						p.advantage__description
+							| Enjoy being a student athlete, the recruiting process can be overwhelming, we want to make this enjoyable experience.
 		footer.footer
-			input.download
-			button.apple
-			button.google
-			.logo
-
+			.download-app__wrapper
+				a.download-app(href="https://play.google.com/store/search?q=surface&c=apps" type="button")
+				.download-app-text__wrapper
+					h2.download-app__title
+						| download app
+					p.download-app__subtitle
+						| show everyone what you can do!
+			.store__buttons
+				button.store
+					a.button-content__wrapper(href="https://www.apple.com/ru/ios/app-store/")
+						.button__apple-store
+						.button-text__wrapper
+							p download on the 
+							p.appstore appstore
+				button.store
+					a.button-content__wrapper(href="https://play.google.com/store")
+						.button__google-play
+						.button-text__wrapper
+							p get it on 
+							p.google-play google play
+			.footer__logo
